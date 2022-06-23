@@ -1,0 +1,56 @@
+include_directories(.)
+include_directories(bzip2)
+include_directories(zlib)
+
+add_library(libZipArchive 
+    bzip2/blocksort.c
+    bzip2/bzcompress.c
+    bzip2/bzlib.c
+    bzip2/crctable.c
+    bzip2/decompress.c
+    bzip2/huffman.c
+    bzip2/randtable.c
+    zlib/adler32.c
+    zlib/compress.c
+    zlib/crc32.c
+    zlib/deflate.c
+    zlib/infback.c
+    zlib/inffast.c
+    zlib/inflate.c
+    zlib/inftrees.c
+    zlib/trees.c
+    zlib/uncompr.c
+    zlib/zutil.c
+    Aes.cpp
+    BaseLibCompressor.cpp
+    Bzip2Compressor.cpp
+    DeflateCompressor.cpp
+    DirEnumerator.cpp
+    FileFilter.cpp
+    Hmac.cpp
+    RandomPool.cpp
+    Sha1.cpp
+    Wildcard.cpp
+    ZipAesCryptograph.cpp
+    ZipArchive.cpp
+    ZipAutoBuffer.cpp
+    ZipCentralDir.cpp
+    ZipCompatibility.cpp
+    ZipCompressor.cpp
+    ZipCrc32Cryptograph.cpp
+    ZipCryptograph.cpp
+    ZipException.cpp
+    ZipExtraData.cpp
+    ZipExtraField.cpp
+    ZipFileHeader.cpp
+    ZipFile_mfc.cpp
+    ZipFile_stl.cpp
+    ZipMemFile.cpp
+    ZipPathComponent_lnx.cpp
+    ZipPathComponent_win.cpp
+    ZipPlatformComm.cpp
+    ZipPlatform_lnx.cpp
+    ZipPlatform_win.cpp
+    ZipStorage.cpp
+    ZipString.cpp
+              )
